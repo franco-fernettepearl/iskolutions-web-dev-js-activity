@@ -37,11 +37,15 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     font-size: 16px;
-    color: #333;
+    color: #06202B;
     font-weight: 600;
+    padding: 8px 14px;        
+    border-radius: 6px;       
     transition: 0.2s ease;
+    display: inline-block;    
 }
 
 nav ul li a:hover {
-    color: #0077ff;
+    color: #F5EEDD;
+    background-color: #06202B;
 }
