@@ -1,4 +1,4 @@
-function validateform() {
+function validateForm() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
@@ -13,6 +13,9 @@ function validateform() {
     }
 
     if (username.trim() === "omlingo" && password.trim() === "pupt") {
-      return true;
+        return true; 
     }
+
+    alert("Invalid username or password.");
+    return false;
 }

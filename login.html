@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/login.css">
 </head>
 <body>
     <div class="login-container">
         <img class="iskolutions-logo" src="assets/images/Iskolutions_logo.png" alt="iskolutions-logo">
-        <form action="index.html" method="post" onsubmit="return validateForm()">
-            <h1>Login</h1>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Login</button>
+        <h1>Welcome Back</h1>
+        <form action="main.html" method="post" onsubmit="return validateForm()">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
         </form>
     </div>
-    <script src="script.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
