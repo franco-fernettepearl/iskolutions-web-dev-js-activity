@@ -1,16 +1,16 @@
 body {
-    background: linear-gradient(135deg, #111, #222);
+    background: #0e0e0e;
     height: 100vh;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Verdana", sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .login-container {
     width: 350px;
-    background: #ffffff;
+    background: #7AE2CF;
     padding: 30px 35px;
     border-radius: 12px;
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
@@ -27,7 +27,7 @@ h1 {
     font-size: 26px;
     margin-bottom: 20px;
     text-align: center;
-    color: #333;
+    color: #06202B;
 }
 
 .input-group {
@@ -39,7 +39,7 @@ label {
     font-weight: bold;
     margin-bottom: 5px;
     display: block;
-    color: #444;
+    color: #06202B;
 }
 
 input {
@@ -62,7 +62,7 @@ input:focus {
 .login-btn {
     width: 100%;
     padding: 8px 1px;
-    background: #007bff;
+    background: #04525F;
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -73,7 +73,7 @@ input:focus {
 }
 
 .login-btn:hover {
-    background: #0056b3;
+    background: #033C46;
 }
 
 @keyframes fadeIn {

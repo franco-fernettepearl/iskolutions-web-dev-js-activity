@@ -1,11 +1,27 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iskolutions</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/login.css">
 </head>
-    <frameset rows="10%,90%">
-        <frame src="header.html" name="header">
-        <frame src="main.html" name="main">
-    </frameset>
+<body>
+    <div class="login-container">
+        <img class="iskolutions-logo" src="assets/images/Iskolutions_logo.png" alt="iskolutions-logo">
+        <h1>Welcome Back</h1>
+        <form action="dashboard.html" method="post" onsubmit="return validateForm()">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
 </html>
