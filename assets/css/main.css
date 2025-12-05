@@ -74,10 +74,13 @@ body {
 }
 
 .profile-summary h4 {
-    font-size: 18px;
-    color: #cccccc;
+    margin-bottom: 8px;
+}
+
+.profile-summary .role {
     margin-bottom: 20px;
 }
+
 
 .profile-summary h3 {
     font-size: 22px;
