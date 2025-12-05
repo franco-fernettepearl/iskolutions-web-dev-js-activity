@@ -1,79 +1,71 @@
 body {
     background: #0e0e0e;
-    height: 100vh;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
 }
 
-.login-container {
-    width: 350px;
+.login-card {
+    width: 380px;
     background: #7AE2CF;
-    padding: 30px 35px;
-    border-radius: 12px;
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
-    animation: fadeIn 0.6s ease;
+    border-radius: 18px;
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.7s ease;
+    box-shadow:
+        5px 5px 15px rgba(0, 0, 0, 0.35),
+        -5px -5px 15px rgba(255, 255, 255, 0.18);
 }
 
 .iskolutions-logo {
-    display: block;
-    margin: 0 auto 15px auto;
-    width: 90px;
+    width: 85px;
 }
 
-h1 {
-    font-size: 26px;
-    margin-bottom: 20px;
-    text-align: center;
+h2 {
     color: #06202B;
 }
 
-.input-group {
-    margin-bottom: 18px;
+.input-wrapper {
+    position: relative;
 }
 
-label {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
-    color: #06202B;
+.input-icon {
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    font-size: 18px;
+    color: #033C46;
+    pointer-events: none;
 }
 
-input {
-    width: 100%;
-    padding: 8px 0px;
+.custom-input {
+    border: none;
+    border-bottom: 2px solid #033C46;
+    border-radius: 0;
+    padding: 8px 4px 8px 28px; /* Space for icon */
+    background: transparent;
     font-size: 15px;
-    border: 1.5px solid #d1d1d1;
-    border-radius: 6px;
-    background: #fafafa;
-    transition: all 0.2s ease;
+    transition: 0.25s ease;
 }
 
-input:focus {
-    border-color: #007bff;
-    background: #ffffff;
-    box-shadow: 0 0 3px rgba(0, 123, 255, 0.35);
-    outline: none;
+.custom-input:focus {
+    box-shadow: none !important;
+    border-bottom: 2px solid #04525F;
+    background: rgba(255, 255, 255, 0.4);
 }
 
 .login-btn {
-    width: 100%;
-    padding: 8px 1px;
     background: #04525F;
     color: white;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
+    font-size: 17px;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-weight: 600;
     transition: 0.25s ease;
 }
 
 .login-btn:hover {
     background: #033C46;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
 @keyframes fadeIn {
