@@ -15,7 +15,7 @@ body {
 .header-wrapper {
     position: relative;
     width: 100%;
-    max-height: 220px;
+    max-height: 350px;
     overflow: hidden;
     border-radius: 12px;
     margin-bottom: 40px;
